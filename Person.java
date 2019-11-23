@@ -1,5 +1,7 @@
 package treeAssignment;
 
+import java.util.ArrayList;
+
 public class Person {
 	
 	private String name;
@@ -7,15 +9,30 @@ public class Person {
 	private String placeOfBirth;
 	private String spouse;
 	private String description;
+	private String parent;
+	private ArrayList<Person> children;
 	public Person(String name, String dateOfBirth, String placeOfBirth,String spouse) {
 		this.name = name;
 		this.dateOfBirth = dateOfBirth;
 		this.placeOfBirth = placeOfBirth;
 		this.spouse = spouse;
+		
+	}
+	
+	public void setChildren(ArrayList<Person> children) {
+		this.children = children;
 	}
 	
 	public Person() {
 		this("N/A","N/A","N/A","N/A");
+	}
+
+	public String getParent() {
+		return parent;
+	}
+
+	public void setParent(String parent) {
+		this.parent = parent;
 	}
 
 	public String getName() {
@@ -60,7 +77,19 @@ public class Person {
 	}
 
 	public String toString() {
-		return name + " born " + dateOfBirth + ", in " + placeOfBirth;
+		StringBuilder sb = new StringBuilder();
+		sb.append(name + " born " + dateOfBirth + ", in " + placeOfBirth + "\n");
+		sb.append("Spouse: " + spouse);
+		sb.append("\nParent: " + parent);
+		sb.append("\n" + description);
+		sb.append("\nChildren: " + "\n");
+		/*for(Person p: children) {
+			sb.append(p.getName());
+			sb.append(", ");
+			
+		} */
+		return sb.toString();
+		
 	}
 
 }

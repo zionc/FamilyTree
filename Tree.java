@@ -94,9 +94,13 @@ public class Tree<E> {
 		
 	}
 	
+	
+	
 	public Node<E> getRoot() {
 		return root;
 	}
+	
+	
 	
 	private void addToTree(Tree<E> e) {
 		root.addChildren(e.root);
@@ -134,11 +138,14 @@ public class Tree<E> {
         int iterations =  new Integer(data.substring(data.indexOf(" ") +1, data.length()));
         String name = data.substring(0, data.indexOf(" "));
         Person person = new PersonFileInitializer(new File("familyinfo.txt"),name).getPerson();
+        
+        	
+        
         //System.out.println("DATA: " + data);
        
         if (iterations == 0) {
             Tree<Person> tree = new Tree<Person>(person);
-            
+           // person.setChildren(tree.root.children);
             return tree;
         } else {
         	ArrayList<Tree<Person>> list = new ArrayList<Tree<Person>>();
@@ -196,31 +203,6 @@ public class Tree<E> {
 	}
 	
 	
-	/*public static void main(String[] args) {
-		BufferedReader in = null;
-		try {
-			in = new BufferedReader(new FileReader("familytree.txt"));
-			Tree<Person> tree = Tree.readBinaryTree(in);
-			System.out.println("******Main tester*****");
-			
-			System.out.println(tree.preOrderToString());
-			
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		finally {
-			try {
-				if(in != null)
-					in.close();
-			} catch(IOException e) {
-				System.out.println("Could not close file");
-			}
-		} 
-		
-		
-		
-	} */
 
 	
 
