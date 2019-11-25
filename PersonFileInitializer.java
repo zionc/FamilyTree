@@ -1,23 +1,36 @@
-package treeAssignment;
+
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 
+
+/**
+ * PersonFileInitializer reads data file and based on a specific name,
+ * constructs Person objects with additional data in the file
+ * @author zionchilagan
+ *
+ */
 public class PersonFileInitializer {
 	
+	/** File to read data from */
 	private File file;
-	private ArrayList<Person> peopleList;
-	private ArrayList<String> nameList;
-	private Person person;
-	public PersonFileInitializer(File file, ArrayList<String> nameList) {
-		this.file = file;
-		this.nameList = nameList;
-		peopleList = new ArrayList<Person>();
-	}
 	
+	
+	/** Person object to create */
+	private Person person;
+	
+	
+	
+	/**
+	 * Constructs PersonFileInitializer with a given file, and
+	 * single name, which is used to locate the person's data
+	 * in the file
+	 * @param file - File to read from
+	 * @param name - Name to target
+	 */
 	public PersonFileInitializer(File file, String name) {
 		this.file = file;
 		BufferedReader br = null;
@@ -25,13 +38,16 @@ public class PersonFileInitializer {
 			br = new BufferedReader(new FileReader(file));
 			person = this.addPerson(br, name);
 			
+			
+		} catch(FileNotFoundException e) {
+			e.printStackTrace();
 		} catch(IOException e) {
 			System.out.println("I/O error");
 		} finally {
 			try {
 				if(br != null) {
 					br.close();
-					System.out.println("File closed");
+					
 				}
 			} catch(IOException e) {
 				e.printStackTrace();
@@ -39,34 +55,15 @@ public class PersonFileInitializer {
 		}
 	}
 	
-	public Person getPerson() {
-		return person;
-	}
-	
-	public void createPeople() {
-		BufferedReader br = null;
-		try {
-			
-			//System.out.println("Size: " + nameList.size());
-			for(int i = 0; i < nameList.size(); i++) {
-				br = new BufferedReader(new FileReader(file));
-				addPerson(br,nameList.get(i));
-				//System.out.println(nameList.get(i));
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if(br != null) {
-					br.close();
-					System.out.println("File closed");
-				}
-			} catch(IOException e) {
-				e.printStackTrace();
-			}
-		}
-		
-	}
+	/**
+	 * Parses the File and targets a specific name, once it 
+	 * finds the name, then a Person object is created with
+	 * a name, date of birth, place of birth, spouse and description
+	 * @param br - BufferedReader which opens file for reading
+	 * @param name - Name of person
+	 * @return - Person created
+	 * @throws IOException - If I/O Exception occurs, throw 
+	 */
 	
 	private Person addPerson(BufferedReader br, String name) throws IOException {
 		
@@ -94,17 +91,24 @@ public class PersonFileInitializer {
 				person.setDescription(description);
 				//peopleList.add(person);
 			}
+			else {
+				person.setName(name);
+			}
 		}
 		return person;
 		
 			
 	}
 	
-	
-	
-	public ArrayList<Person> getPeople() {
-		return peopleList;
+	/**
+	 * Get person created
+	 * @return
+	 */
+	public Person getPerson() {
+		return person;
 	}
+	
+	
 	
 	
 

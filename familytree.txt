@@ -1,7 +1,7 @@
 Zion 3
 	Josh 2
 		Helio 1
-			Tester 0
+			Alexa 0
 		Krillin 0
 	Kingsley 1
 		Alijah 0

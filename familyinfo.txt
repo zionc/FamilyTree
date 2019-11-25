@@ -3,78 +3,105 @@ Zion
 Philippines
 N/A
 Zion is a student studying
- computer science, fun fact:
-Zion won 5 gold olympic medals
+ computer science. How Zion managed
+ to create a family remains a mystery,
+ legend has it Zion created his family
+ in a laboratory. Fun fact: Zion used to be a novice piano player.
 End
 
 Josh
-7/21/1998
+7/21/2023
 Jamaica
 Aya
-Josh is a student studying
-computer science, fun fact:
-Josh tore his acl playing
-basketball
+Josh is a student studying computer science
+ in the same school as Zion. (Way to be original)
+ Josh spends most of his time playing video games
+ and streaming on twitch, Josh aspires to be a renowned 
+ streamer. Fun fact: Josh tore his acl playing basketball.
+ Josh also plays the piano and seeks to be as great as Zion. 
 End
 
 Kingsley
-4/17/1998
+4/17/2028
 Wakanda
 Grace
-Kingsley is an aspiring
-fitness trainer, fun fact:
-Kingsley's original name
-was Bubbles
+Kingsley is an aspiring fitness trainer. Kingsley
+ was a trouble child growing up, always getting into
+ trouble, but is now working towards his goal of being
+ the strongest man alive. Fun fact: Kingsley's original name was Bubbles.
 End
 
 Kalifa
-11/28/1997
+11/28/2030
 Flint
 Joanna
-Kalifa is a F-League
-basketball player, fun
-fact: Kalifa loves to 
-write poetry
+Kalifa was a jack of all trades in sports growing up,
+ although he wasn't very good at them he enjoyed participating
+ in them. Fun fact: Kalifa loves to write poetry.
 End
 
 Helio
-12/13/1994
-Jungle
-N/A
-Helio is an amateur
-fortnite player, fun
-fact: Helio thinks he's
-better than Zion. 
+12/13/2059
+Cape Verde
+Unkown
+Helio is currently working at Apple and
+ is going to school for Physics. Helio
+ seeks to be responsible for being the first
+ to harness nuclear fusion. (He's got a loooong way
+ to go.) Fun fact: Helio is a photographer.
 End
 
 Krillin
-Date
-Place
-N/A
-Small Description
+9/12/2062
+King Kai's palace
+Android 18
+Krillin is one of earth's defenders who
+ fights to ward off any invaders. Being one 
+ of the weakest in the Z Fighters (Group of defenders)
+ Krillin seems to somehow manage. Fun fact: Krillin is
+ bald.
 End
 
 
 Alijah
-Date
-Place
-N/A
-Small Description
+10/26/2060
+Natick, Ma
+Jennifer
+Alijah is a rising star in the NBA who
+ is on pace for becoming rookie of the year.
+ Fun fact: Alijah seems to want to be in the 1%
+ that chooses to wear glasses while playing basketball.
 End
 
 Flexer
-Date
-Place
-N/A
-Small Description
+8/13/2064
+Philippines
+Nicole
+Flexer recently graduated from Framingham State University
+ with a bachelors in Computer Science, while seeking to make
+ his inevitable mark in Software Development, Flexer finds himself
+ tumbling/tricking and working in Microsoft in his spare time.
 End
 
 Myles
-Date
-Place
-N/A
-Small Description
+2/21/2062
+Dorchester, MA
+Sydney
+Myles is a student in one of the most prestigious schools, Dartmouth
+ college. Myles is also studying computer science (wow Computer Science must 
+ be popular) Student by day, Myles is also busy running track. After
+ suffering from a hamstring injury, Myles is training with his eyes set
+ on running for nationals. 
 End
 
-
+Alexa
+4/18/2092
+Silicon Valley
+John
+Alexa was not only a scholar growing up, Alexa was also proficient
+ in Soccer. Receiving multiple scholarships from Ivy League schools,
+ Alexa decided not to pursue higher education but rather chose to create her
+ start up company. With Alexa's company growing more and more, companies such
+ as Facebook, Amazon and Google are slowly starting to become weary of Alexa.
+End
 
